@@ -1,0 +1,122 @@
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #E28E26;
+}
+a:hover{
+    color: #E28E26;
+}
+.top_header{
+    display: flex;
+    padding-top: 5px;
+    background-color: #2e2f2f;
+    height: 3rem;
+}
+.lower_header{
+    top: 3rem;
+}
+.header_option{
+    float: right!important;
+}
+.header_option a{
+    text-decoration: none;
+}
+.header_link{
+    margin-right: 5px;
+    margin-top: 5px;
+    color: white;
+}
+/* .header_link:hover{
+    color: #E28E26;
+} */
+.header_icon{
+    color: #E28E26;
+}
+.menu-list>li {
+font-size: 1.4rem;
+}
+.social-list a{
+    font-size: 1.1rem;
+}
+.social-list ul{
+    display: flex;
+    flex-direction: row;
+}
+.social-list ul li{
+    list-style: none;
+    padding: 8px;
+}
+#sub-categroy{
+    display: flex;
+    flex-direction:column;
+    position:absolute;
+    margin:2rem 0 0 0;
+    background:black;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#sub-categroy li{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 12px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+}
+#root-category:hover #sub-categroy{
+    opacity: 1;
+}
+.navbar-toggle:hover .icon-bar {
+    background-color:#E28E26;
+}
+.social-list a:hover {
+    color: #E28E26;
+}
+.section-subtitle {
+    color: #E28E26;
+}
+.experience-border {
+    border: .357rem solid #E28E26;
+}
+
+.filter li a:hover, .filter .active a {
+    color: #E28E26;
+}
+
+/* connected */
+/* .project-item:hover .project-hover {
+    background-color: #E28E26;
+}
+.changing_color_for_dropdown_backgrount{
+    color:white
+} */
+/* endconnected */
+/* //semi connected make it black if avove twos are none */
+.news_hover_font_color{
+    color: white;
+    z-index: 9999;
+}
+.abbout_call_directly{
+    font-size: 40px;
+    color: white;
+}
+.footer_heading{
+    font-size: 20px;
+}
+.news_hover_font_color{
+    color: black;
+    z-index: 9999;
+}
+.branding_hover:hover{
+    color: #E28E26!important;
+}
+@media(max-width:500px){
+    .top_header{
+        height: 5rem;
+    }
+    .lower_header{
+        top: 5rem;
+    }
+}
