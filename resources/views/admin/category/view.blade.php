@@ -94,7 +94,7 @@
                                 </td>
                                <td>
                                <a href="{{url('/admin/edit-category/'.$category->id)}}" class="btn btn-add btn-sm"><i class="fa fa-pencil"></i></a>
-                               <a href="{{url('/admin/delete-category/'.$category->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> </a>
+                               <a href="{{url('/admin/delete-category/'.$category->id)}}" class="btn btn-danger btn-sm categoryDelete"><i class="fa fa-trash-o"></i> </a>
                                <a href="{{url('/admin/view-product/bycategory/'.$category->id)}}" class="btn btn-add btn-sm"><i class="fa fa-eye"></i></a>
                             </td>
                             </tr>
@@ -111,4 +111,21 @@
     <!-- /.content -->
  </div>
  <!-- /.content-wrapper -->
+@endsection
+@section('js')
+<script>
+ // delete
+   $(document).ready( function () {
+    $(".categoryDelete").click(function(e){
+        e.preventDefault();
+        var link=$(this).attr("href");
+        bootbox.confirm("Are you sure to delete",function(confirmed){
+        if(confirmed){
+            // alert(link)
+        window.location.href=link;
+        };
+        });
+    });
+   });
+</script>
 @endsection

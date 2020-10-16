@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap'); */
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: #E28E26;
+    background: #ffd530;
 }
 a:hover{
-    color: #E28E26;
+    color: #ffd530;
 }
 .top_header{
     display: flex;
@@ -29,13 +34,14 @@ a:hover{
     color: #E28E26;
 } */
 .header_icon{
-    color: #E28E26;
+    color: #ffd530;
 }
 .menu-list>li {
-font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 .social-list a{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    font-weight: 800;
 }
 .social-list ul{
     display: flex;
@@ -65,39 +71,94 @@ font-size: 1.4rem;
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid black;
 }
+
+
 #root-category:hover #sub-categroy{
     opacity: 1;
 }
 .navbar-toggle:hover .icon-bar {
-    background-color:#E28E26;
+    background-color:#ffd530;
 }
 .social-list a:hover {
-    color: #E28E26;
+    color: #ffd530;
 }
 .section-subtitle {
-    color: #E28E26;
+    color: #ffd530;
 }
 .experience-border {
-    border: .357rem solid #E28E26;
+    border: .357rem solid #ffd530;
 }
 
 .filter li a:hover, .filter .active a {
-    color: #E28E26;
+    color: #ffd530;
 }
-
-/* connected */
-/* .project-item:hover .project-hover {
-    background-color: #E28E26;
+/* about */
+.experience-box {
+    margin-top: 6rem;
 }
-.changing_color_for_dropdown_backgrount{
-    color:white
-} */
-/* endconnected */
-/* //semi connected make it black if avove twos are none */
-.news_hover_font_color{
+/* client */
+.our_client_heading{
+    font-size: 2.571rem;
+}
+/* connected //////////////////////////////////////////////*/
+/* jor kore category yellow hover to branding color */
+.project-item:hover .project-hover {
+    background-color: #ffd530;
+}
+.project-item:hover .project-hover .project-title {
+    color:  #013;
+}
+.category_hover_font_color .project-title{
+    color:white;
+}
+.category_hover_font_color .project-title a{
+    color:white;
+}
+.category_hover_font_color .project-title a:hover{
+    color:#414042;
+}
+.category_hover_font_color .project-description{
+    color:#414042;
+}
+.project-item:hover .link-arrow {
     color: white;
-    z-index: 9999;
 }
+.section-projects {
+    padding-bottom: 0rem;
+}
+.section {
+    padding:0;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.project-carousel {
+    margin-top: 2rem;
+}
+/*end of jor kore category yellow hover to branding color */
+.hover-border::before,.hover-border::after,.hover-border div::before,.hover-border div::after{
+    background: #ffd530;
+}
+.news-item:hover .news-hover{
+    background-color: #414042;
+}
+.news-hover .news-description{
+    color: white;
+}
+.news-item:hover .read-more{
+    color:#CEE0AC;
+}
+.news-item:hover .read-more:hover{
+    color:#ffd530;
+}
+.news-carousel {
+    margin-top: 2rem;
+}
+/* jor kore news hover baniyechi */
+
+/* end of jor kore banano */
+/* endconnected////////////////////////////////////////// */
+/* //semi connected make it black if avove twos are none */
+
 .abbout_call_directly{
     font-size: 40px;
     color: white;
@@ -110,13 +171,78 @@ font-size: 1.4rem;
     z-index: 9999;
 }
 .branding_hover:hover{
-    color: #E28E26!important;
+    color: #ffd530!important;
 }
+.rightside_interior_heading{
+    color: #ffd530!important;
+}
+.rightside_menu_heading:hover{
+    color: #ffd530!important;
+}
+.tp-bullet.selected, .tp-bullet:hover {
+    background: #ffd530;
+}
+.brand img {
+    width: 225px;
+    height: 4.356rem;
+}
+.navbar .brand {
+    margin-top: -1.5rem;
+}
+.map{
+    max-height: 500px;
+    overflow: hidden;
+}
+.all_article_branding_color:hover{
+    color: #ffd530!important;
+}
+/* detail */
+.row-images {
+    padding: 1rem 0;
+}
+/* categorypage */
+.page-header, .page-header-2, .page-header-3 {
+    margin: 0;
+}
+.page-header {
+    margin-top: 70px;
+}
+.page-header h1{
+    font-size: 2.428rem;
+    text-align: center;
+}
+/* contact us */
+.page-header-3{
+    margin-top: 70px;
+}
+
+.page-header-3 h1{
+    font-size: 2.428rem;
+    margin-bottom: 10px;
+}
+.contact-address {
+    margin-bottom: 0;
+}
+.contact-top {
+    margin-bottom:0px;
+}
+.owl-dot.active span {
+    background-color: #ffd530;
+}
+@media(max-width:1028px){
+    .map img{
+        width: 100%;
+    }
+}
+
 @media(max-width:500px){
     .top_header{
         height: 5rem;
     }
     .lower_header{
         top: 5rem;
+    }
+    .map img{
+        width: 100%;
     }
 }

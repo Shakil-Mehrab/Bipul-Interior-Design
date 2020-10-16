@@ -106,7 +106,7 @@
                            </td>
                               <td class="center">
                                  <div class="btn-group">
-                                       <a href="{{url('/admin/delete-alt-partner-image/'.$productImage->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> </a>
+                                       <a href="{{url('/admin/delete-alt-partner-image/'.$productImage->id)}}" class="btn btn-danger btn-sm partnerDelete"><i class="fa fa-trash-o"></i> </a>
                                  </div>
                               </td>
                            </tr>
@@ -124,4 +124,21 @@
  </div>
  <!-- /.content-wrapper -->
 
+@endsection
+@section('js')
+<script>
+ // delete
+   $(document).ready( function () {
+    $(".partnerDelete").click(function(e){
+        e.preventDefault();
+        var link=$(this).attr("href");
+        bootbox.confirm("Are you sure to delete",function(confirmed){
+        if(confirmed){
+            // alert(link)
+        window.location.href=link;
+        };
+        });
+    });
+   });
+</script>
 @endsection

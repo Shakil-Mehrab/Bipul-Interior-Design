@@ -100,6 +100,7 @@
       <!-- End Theme label Script
          =====================================================================-->
          <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+         <script type="text/javascript" src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js')}}"></script>
          @yield('js')
 
          <script>

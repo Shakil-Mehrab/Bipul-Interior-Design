@@ -1,26 +1,26 @@
 @extends('layout.app')
 @section('title','Contact us - ')
 @section('content')
-
-<main class="page-header-3" style="background-image: url('{{asset('images/contacback.jpg')}}')">
+{{-- style="background-image: url('{{asset('images/contacback.jpg')}}')" --}}
+<main class="page-header-3" >
     <div class="container">
         <div class="row">
             <div class="col-md-3" >
-            <div class="title-hr"></div>
+            {{-- <div class="title-hr"></div> --}}
             </div>
             <div class="col-md-8 col-lg-6"><h1>Enjoy Coffee With Us</h1></div>
         </div>
     </div>
 </main>
 <div class="content">
-    <div id="map" class="map"><img src="{{asset('images/map.png')}}" alt=""></div>
+    <div id="map" class="map"><img src="{{asset('images/map.jpg')}}" alt=""></div>
         <div class="page-inner">
             <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="section-info">
-                                <div class="title-hr"></div>
+                                {{-- <div class="title-hr"></div> --}}
                                 <div class="info-title">Keep in touch</div>
                             </div>
                         </div>
@@ -29,16 +29,19 @@
                             <div class="row-contact row">
                                 <div class="col-contact col-lg-6">
                                     <h3 class="contact-title contact-top">{{$about->location}}</h3>
-                                    <p class="contact-address text-muted"><strong>{{$about->address}}</strong></p>
-                                    <p class="contact-row"><strong class="text-dark">Email: </strong>{{$about->email}}</p>
+                                    <p class="contact-address text-muted">
+                                        <strong>{{$about->address}}</strong><br>
+                                        <strong style="color: white">Email: </strong>{{$about->email}}
+                                    </p>
                                 </div>
                                 <div class="col-contact col-lg-6">
                                     <h3 class="contact-title contact-top">Call Us Direcly</h3>
                                     <p class="contact-address text-muted"><span>{{$about->phone}}</span></p>
-                                    <p class="text-muted"><strong class="text-dark">Work Hours</strong><br>
-                                        Saturday - Wednesday : 10am - 10pm<br>
-                                        Thursday: 10am - 12pm, Friday off work</p>
-                                    <div class="text-muted"><strong class="text-dark">Follow us</strong><br>
+                                    <h5 class="contact-title contact-top" style="margin-top: 10px">Working Hours</h5>
+                                    <p class="contact-address text-muted"><span>Saturday - Wednesday : 10am - 10pm</span></p>
+                                    <p class="contact-address text-muted"><span> Thursday: 10am - 12pm, Friday off work</span></p>
+
+                                        <h6 class="contact-title contact-top" style="margin-top: 10px">Follow Us</h6>
                                         <div class="contact-social social-list">
                                             <a href="#" class="header_link"><i class="fab fa-facebook-square"></i></a>
                                             <a href="#" class="header_link"><i class="fab fa-twitter-square"></i></a>

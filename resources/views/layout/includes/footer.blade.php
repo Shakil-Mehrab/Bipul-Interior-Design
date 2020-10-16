@@ -1,7 +1,7 @@
 <footer id="footer" class="footer section">
     <div class="footer-flex">
         <div class="flex-item">
-            <a class="brand pull-left" href="/">
+            <a class="brand pull-left" href="/" style="margin-left: 3%">
             <img alt="" src="{{asset('images/logo.png')}}">
             </a>
         </div>

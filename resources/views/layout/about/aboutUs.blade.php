@@ -42,6 +42,7 @@
                         <div class="client-title">
                             <span class="client-name">{{$client->name}}</span>
                             <span class="client-company">/ {{$client->designation}}</span>
+                            <p class="client_address">{{$client->address}}</p>
                         </div>
                         <p class="client-description">{{$client->description}}</p>
                     </div>

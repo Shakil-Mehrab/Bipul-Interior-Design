@@ -84,7 +84,7 @@
                                 </td>
                                <td>
                                <a href="{{url('/admin/edit-slide/'.$product->id)}}" class="btn btn-add btn-sm" title="Edit Product"><i class="fa fa-pencil"></i></button>
-                               <a href="{{url('/admin/delete-slide/'.$product->id)}}" class="btn btn-danger btn-sm" title="Delete Product"><i class="fa fa-trash-o"></i> </button>
+                               <a href="{{url('/admin/delete-slide/'.$product->id)}}" class="btn btn-danger btn-sm slideDelete" title="Delete Product"><i class="fa fa-trash-o"></i> </button>
                                </td>
                             </tr>
                             @empty
@@ -142,5 +142,18 @@ $(document).ready( function () {
     }
     });
 });
+ // delete
+ $(document).ready( function () {
+    $(".slideDelete").click(function(e){
+        e.preventDefault();
+        var link=$(this).attr("href");
+        bootbox.confirm("Are you sure to delete",function(confirmed){
+        if(confirmed){
+            // alert(link)
+        window.location.href=link;
+        };
+        });
+    });
+   });
 </script>
 @endsection

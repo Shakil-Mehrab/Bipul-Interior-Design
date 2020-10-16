@@ -71,7 +71,7 @@
                     </div>
                 </div> --}}
             </article>
-            <section class="related-posts">
+            {{-- <section class="related-posts">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <h6 class="related-post-title">Related Posts</h6>
@@ -96,10 +96,8 @@
                         @endif
                     @empty
                     @endforelse
-
-
                 </div>
-            </section>
+            </section> --}}
         </div>
     </div>
 </div>
