@@ -16,6 +16,10 @@ a:hover{
     background-color: #2e2f2f;
     height: 3rem;
 }
+.top_header_option{
+    display: block;
+    width: 100%;
+}
 .lower_header{
     top: 3rem;
 }

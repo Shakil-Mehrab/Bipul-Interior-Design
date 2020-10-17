@@ -38,7 +38,7 @@
     </div> --}}
 </div>
 <header class="navbar boxed js-navbar top_header">
-<div class="header_option col-md-6 col-md-offset-6 col-sm-12">
+<div class="header_option top_header_option" align="right">
     <a href="#" class="header_link"><i class="fas fa-envelope header_icon"></i> Email : {{$about->email}}</a>
     <a href="#" class="header_link"><i class="fas fa-phone-square-alt header_icon"></i> Phone : {{$about->phone}}</a>
     <a href="#" class="header_link"><i class="fab fa-facebook-square"></i></a>
