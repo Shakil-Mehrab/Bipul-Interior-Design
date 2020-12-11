@@ -2,7 +2,7 @@
 @section('title','Dashboard')
 @section('content')
 
-   <body>
+
 
          <!-- Content Wrapper. Contains page content -->
          <div class="content-wrapper">
@@ -441,6 +441,6 @@
          </div>
          <!-- /.content-wrapper -->
 
-   </body>
+
 @endsection
 

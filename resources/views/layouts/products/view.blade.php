@@ -95,7 +95,7 @@
                                     data-toggle="toggle" data-on="Enabled" data-of="Disabled" data-onstyle="success" data-offstyle="danger"
                                     @if($product['featured']=="1") checked @endif>
                                     <div id="myElem" style="display:none;" class="alert alert-success">Status Enabled</div>
-                                    </td>
+                                </td>
                                 <td>
                                 <a href="{{url('/admin/add-images/'.$product->id)}}" class="btn btn-info btn-sm" title="Add Images"><i class="fa fa-image"></i> <span>{{$product->productImages->count()}}</span></a>
                                 {{-- <a href="{{url('/admin/add-attributes/'.$product->id)}}" class="btn btn-warning btn-sm" title="Add Attributes"><i class="fa fa-list"></i></button> --}}
